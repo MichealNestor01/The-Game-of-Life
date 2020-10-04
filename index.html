@@ -1,0 +1,48 @@
+<!--This program  is explained in the linked javascript file-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The game of life</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+      integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Muli&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <section class="page-wrapper">
+      <section class="title">
+        <h1>The game of life</h1>
+      </section>
+      <!--The controller section houses 3 buttons the user uses to start 
+      pause and reset the simulation-->
+      <section class="controller">
+        <div class="control-module">
+          <p>Play:</p>
+          <button class="play-button"><i class="fas fa-play"></i></button>
+        </div>
+        <div class="control-module">
+          <p>Pause:</p>
+          <button class="pause-button"><i class="fas fa-pause"></i></button>
+        </div>
+        <div class="control-module">
+          <p>Reset:</p>
+          <button class="reset-button"><i class="fas fa-sync"></i></button>
+        </div>
+      </section>
+      <!--The grid is where the simulation takes place, the grid div is populated
+      by the java script file-->
+      <section class="grid-container">
+        <div class="grid"></div>
+      </section>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
